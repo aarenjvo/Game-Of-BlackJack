@@ -1,6 +1,42 @@
 * {
-    background-color: #E0E092;
+    background-color: #96D59C;
+
+        font-family: "Pixelify Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
 }
 
 
 body {}
+
+div, h1 {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    font-size: 20vh;
+    max-width: 100%;
+}
+
+div, h5 {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+h5 {
+    font-size: 70px;
+}
+
+
+h1 {
+    color: white;
+}
+
+.logo1{
+    width: .5em;
+}
+
+.logo2{
+    width: .5em;
+}
