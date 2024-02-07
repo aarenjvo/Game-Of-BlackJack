@@ -2,7 +2,7 @@
 
 I will be creating a simple game of blackjack, where the player starts with $500, is playing against the dealer, and can continue to play indefinitely unless player total bet amount reaches $0.
 
-# INSPIRATION:
+## INSPIRATION:
 
 I am creating this game because growing up, my dad was a blackjack dealer so playing blackjack with my family was a fun activity for us. Therefore I am super familiar with this game and am going to enjoy making it as my first game project!
 
@@ -17,7 +17,7 @@ I am creating this game because growing up, my dad was a blackjack dealer so pla
 -If Player is satisfied with their combined cards value and that value is lower than the Dealer's combined cards value, without either hands being > 21, then Player loses.
 -Player continues to play as long as total bet amount is not = $0.
 
-## FILES:
+### FILES:
 
 Included are 'index.html', 'index.js' and 'index.css files.
 
