@@ -105,13 +105,49 @@ h1 {
         -26px 53px 1px #efefef;
 }
 
+.backCardPurp {
+    width: .4em;
+    position: fixed;
+    left: 1.2em;
+    top: 36%;
+    margin: auto;
+    transform: rotate(145deg);
+}
+
+.backCardPink {
+    width: .4em;
+    position: fixed;
+    left: 1.5em;
+    top: 36%;
+    margin: auto;
+    transform: rotate(155deg);
+}
+
+.backCardGreen {
+    z-index: 1;
+    width: .4em;
+    position: fixed;
+    right: 1.5em;
+    top: 36%;
+    margin: auto;
+    transform: rotate(30deg);
+}
+
+.backCardRed {
+    width: .4em;
+    position: fixed;
+    right: 1.2em;
+    top: 36%;
+    margin: auto;
+    transform: rotate(35deg);
+}
+
 .logo1Point5 {
     width: .5em;
     position: fixed;
     left: .5em;
     top: 33%;
     margin: auto;
-    transform: rotate(145deg);
 }
 
 .logo1 {
@@ -121,7 +157,7 @@ h1 {
     left: 1em;
     top: 33%;
     margin: auto;
-    transform: rotate(150deg);
+    
 }
 
 .logo2 {
@@ -131,7 +167,7 @@ h1 {
     right: 1em;
     top: 33%;
     margin: auto;
-    transform: rotate(30deg);
+    
 }
 
 .logo2Point5 {
@@ -140,7 +176,7 @@ h1 {
     right: .5em;
     top: 33%;
     margin: auto;
-    transform: rotate(35deg);
+    
 }
 
 .leftLogosWrap{
@@ -164,9 +200,9 @@ h1 {
         transform: translate(0,0);
     }
     to {
-        transform: translate(40%, 100px);
-        animation: fade-out 500ms forwards;
-        opacity: 0%;
+        transform: translate(40%, 70px);
+        /* animation: fade-out 500ms forwards; */
+        /* opacity: 0%; */
     }
 }
 
@@ -177,6 +213,6 @@ h1 {
     }
     to {
         transform: translate(-40%, 800px);
-        opacity: 0%;
+        /* opacity: 0%; */
     }
 }
