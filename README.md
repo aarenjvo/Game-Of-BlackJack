@@ -4,7 +4,7 @@ I will be creating a simple game of blackjack, where the player starts with $500
 
 ## INSPIRATION:
 
-I am creating this game because growing up, my dad was a blackjack dealer so playing blackjack with my family was a fun activity for us. Therefore I am super familiar with this game and am going to enjoy making it as my first game project!
+I am creating this game because growing up, my dad was a blackjack dealer so playing blackjack with my family was a fun activity for us. Therefore I am super familiar with this game and am going to enjoy making it with my own styling. I am hoping to achieve a smoothly operating online game.
 
 ## RULES:
 
