@@ -35,6 +35,7 @@ nav {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 0 auto;
     position: fixed;
     left: 25%;
     top: 30%;
@@ -46,9 +47,7 @@ h1 {
     background-color: transparent;
     display: flex;
     align-items: center;
-    margin: auto;
-    font-size: 5vh;
-    max-width: 100%;
+    margin: 0 auto;
 }
 
 #playButton {
@@ -56,8 +55,6 @@ h1 {
     border: none;
     background-color: transparent;
     font-size: 70px;
-    position: fixed;
-    top: 60%;
     transition: all 0.7s;
     text-shadow: 2px 1px #747474,
         -1px 3px 1px #767676,
@@ -164,22 +161,39 @@ h1 {
 }
 
 .logo1Point5 {
-    width: .3em;
+    width: .5em;
     position: fixed;
-    left: 1.2em;
+    left: 1em;
     margin: auto;
 }
 
 .logo1 {
     z-index: 1;
-    width: .3em;
+    width: .5em;
     position: fixed;
     left: .7em;
     margin: auto;
-    
+    transform: rotate(-10deg);
 }
 
-.logo2 {
+.LogosWrap{
+    animation-name: moveLogos;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveLogos {
+    from {
+        transform: translate(0,0);
+    }
+    to {
+        transform: translate(39%, 15vh);
+        /* animation: fade-out 500ms forwards; */
+        /* opacity: 0%; */
+    }
+}
+
+/* .logo2 {
     z-index: 1;
     width: .3em;
     position: fixed;
@@ -194,45 +208,25 @@ h1 {
     right: 1.0em;
     margin: auto;
     
-}
-
-.leftLogosWrap{
-    animation-name: moveLeftLogos;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-}
+} */
 
 
-.rightLogosWrap{
+/* .rightLogosWrap{
     animation-name: moveRightLogos;
     animation-duration: 3s;
     animation-fill-mode: forwards;
 
-}
+} */
 
-
-
-@keyframes moveLeftLogos {
-    from {
-        transform: translate(0,0);
-    }
-    to {
-        transform: translate(39%, 25vh);
-        /* animation: fade-out 500ms forwards; */
-        /* opacity: 0%; */
-    }
-}
-
-
-@keyframes moveRightLogos {
+/* @keyframes moveRightLogos {
     from {
         transform: translate(0,0);
     }
     to {
         transform: translate(-40.9%, 15vh);
         /* opacity: 0%; */
-    }
-}
+    
+
 
 
 footer {
@@ -250,15 +244,17 @@ footer {
     position: fixed;
 }
 
+/* .hideHitStay {
+    display: none;
+} */
+
 .hitStayWrap {
     display: flex;
     justify-content: center;
     margin: 0 auto;
     position: fixed;
-    left: 41.5%;
+    left: 42%;
     bottom: 8%;
-
-    
 }
 
 #hit {
@@ -266,8 +262,8 @@ footer {
     border-radius: 6px 6px;
     background-color: white;
     width: 8em;
-    padding: 10px 30px;
-    margin: 0 1%;
+    padding: 10px 37px;
+    margin: 0 5%;
 }
 
 #stay {
@@ -276,6 +272,6 @@ footer {
     background-color: white;
     width: 8em;
     padding: 10px 30px;
-    margin: 0 1%;
+    margin: 0 5%;
     
 }
