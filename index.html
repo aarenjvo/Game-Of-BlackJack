@@ -16,46 +16,62 @@
 <body>
 
     <nav>
-    <button onclick ='showContent()' id = 'refresh' style='font-size: 1vw'>Refresh</button>
+        <button onclick='showContent(); hideGame()' id='refresh' style='font-size: 1vw'>Refresh</button>
     </nav>
 
-    <section id = 'heroContainer'>
+    <main>
 
-    <div class = 'LogosWrap' style = 'font-size: 10vw'>
-    <img src = './assets/images/Hearts_J.png' class = 'logo1Point5' style='font-size: 10vw'>
-    <img src='./assets/images/Spades_ACE.png' class = 'logo1' style='font-size: 10vw'>
-    </div>
+        <section id='heroContainer'>
 
-    <img src = './assets/images/Back_1.png' class = 'backCardPurp' style='font-size: 10vw'>
-    <img src = './assets/images/Back_2.png' class = 'backCardPink' style='font-size: 10vw'>
-    <div id='headerPlusButton'>
-        <h1 style='font-size: 10vw'>BlackJack</h1>
-        <br>
-        <button onclick = 'hideHero()' id = 'playButton' style='font-size: 5vw'>Start</button>
-    </div>
-    <img src = './assets/images/Back_3.png' class = 'backCardGreen' style='font-size: 10vw'>
-    <img src = './assets/images/Back_4.png' class = 'backCardRed' style='font-size: 10vw'>
+            <div class='LogosWrap' style='font-size: 10vw'>
+                <img src='./assets/images/Hearts_J.png' class='logo1Point5' style='font-size: 10vw'>
+                <img src='./assets/images/Spades_ACE.png' class='logo1' style='font-size: 10vw'>
+            </div>
 
-    <!-- <div class ='rightLogosWrap'>
-    <img src='./assets/images/Clubs_Q.png' class = 'logo2' style='font-size: 10vw'>
-    <img src='./assets/images/Diamonds_ACE.png' class = 'logo2Point5' style='font-size: 10vw'>
-    </div> -->
+            <img src='./assets/images/Back_1.png' class='backCardPurp' style='font-size: 10vw'>
+            <img src='./assets/images/Back_2.png' class='backCardPink' style='font-size: 10vw'>
+            <div id='headerPlusButton'>
+                <h1 class='blackJackHeader' style='font-size: 10vw'>BlackJack</h1>
+                <br>
+                <button onclick='hideHero(); showGame()'; id='playButton' style='font-size: 5vw'>Start</button>
+            </div>
+            <img src='./assets/images/Back_3.png' class='backCardGreen' style='font-size: 10vw'>
+            <img src='./assets/images/Back_4.png' class='backCardRed' style='font-size: 10vw'>
 
+        </section>
 
-    <div class = 'hideHitStay'>
-    <div class = 'hitStayWrap'>
-        <button id = 'hit' style = 'font-size: 1vw'>Hit</button>
-        <button id = 'stay' style = 'font-size: 1vw'>Stay</button>
-        </div>
+        <div class='hideHitStay'>
+            <div class='hitStayWrap'>
+                <button id='hit' style='font-size: 1vw'>Hit</button>
+                <button id='stay' style='font-size: 1vw'>Stay</button>
+            </div>
         </div>
 
-</section>
+    </main>
 
-<footer>
-   
+    <section id='dealerVsPlayer'>
 
-</footer>
-    
+        <h1 class='dealerText' style='font-size: 4vw'>Dealer:</h1>
+        <h1 class='playerText' style='font-size: 4vw'>Player:</h1>
+
+        <div class='dealerHand'>
+            <img src='./assets/images/Back_2.png' class='dealerCard1'>
+            <img src='./assets/images/Clubs_10.png' class='dealerCard2'>
+        </div>
+
+        <div class='youHand'>
+            <img src='./assets/images/Diamonds_ACE.png' class='playerCard1'>
+            <img src='./assets/images/Spades_3.png' class='playerCard2'>
+        </div>
+
+    </section>
+
+
+    <footer>
+
+
+    </footer>
+
 
 
 
