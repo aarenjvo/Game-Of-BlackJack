@@ -38,7 +38,7 @@ nav {
     margin: 0 auto;
     position: fixed;
     left: 25%;
-    top: 30%;
+    top: 35%;
 }
 
 div,
@@ -62,11 +62,11 @@ h1 {
         -3px 7px 1px #7a7a7a,
         -4px 9px 1px #7f7f7f,
         -5px 11px 1px #838383,
-        -6px 13px 1px #878787,
-        -7px 15px 1px #8a8a8a,
+        -6px 13px 1px #878787;
+        /* -7px 15px 1px #8a8a8a,
         -8px 17px 1px #8e8e8e,
         -9px 19px 1px #949494,
-        -10px 21px 1px #989898;
+        -10px 21px 1px #989898; */
     /* -11px 23px 1px #9f9f9f,
     -12px 25px 1px #a2a2a2, 
     -13px 27px 1px #a7a7a7,
@@ -87,13 +87,14 @@ h1 {
 }
 
 #playButton:hover {
-    color: black;
+    color: antiquewhite;
     transform: scale(1.1);
     rotate: 360deg;
 }
 
 h1 {
-    color: antiquewhite;
+    color: #DFDCDB;
+    /* color: #0d0d0d; */
     text-shadow: 0 2px 1px #747474,
         -1px 3px 1px #767676,
         -2px 5px 1px #787878,
@@ -107,8 +108,8 @@ h1 {
         -10px 21px 1px #989898,
         -11px 23px 1px #9f9f9f,
         -12px 25px 1px #a2a2a2,
-        -13px 27px 1px #a7a7a7,
-        -14px 29px 1px #adadad,
+        -13px 27px 1px #a7a7a7;
+        /* -14px 29px 1px #adadad,
         -15px 31px 1px #b3b3b3,
         -16px 33px 1px #b6b6b6,
         -17px 35px 1px #bcbcbc,
@@ -120,7 +121,7 @@ h1 {
         -23px 47px 1px #e2e2e2,
         -24px 49px 1px #e6e6e6,
         -25px 51px 1px #eaeaea,
-        -26px 53px 1px #efefef;
+        -26px 53px 1px #efefef; */
 }
 
 .backCardPurp {
