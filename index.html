@@ -16,69 +16,69 @@
 <body>
 
     <nav>
-        <button onclick='showContent(); hideGame()' id='refresh' style='font-size: 1vw'>Refresh</button>
+        <button onclick='showContent(); hideGame();' id='refresh' style='font-size: 1vw'>Refresh</button>
     </nav>
 
-    <main>
+    <section id='frontPage'>
 
-        <section id='heroContainer'>
-
-            <div class='LogosWrap' style='font-size: 10vw'>
-                <img src='./assets/images/Hearts_J.png' class='logo1Point5' style='font-size: 10vw'>
-                <img src='./assets/images/Spades_ACE.png' class='logo1' style='font-size: 10vw'>
-            </div>
-
-            <img src='./assets/images/Back_1.png' class='backCardPurp' style='font-size: 10vw'>
-            <img src='./assets/images/Back_2.png' class='backCardPink' style='font-size: 10vw'>
-            <div id='headerPlusButton'>
-                <h1 class='blackJackHeader' style='font-size: 10vw'>BlackJack</h1>
-                <br>
-                <button onclick='hideHero(); showGame()'; id='playButton' style='font-size: 5vw'>Start</button>
-            </div>
-            <img src='./assets/images/Back_3.png' class='backCardGreen' style='font-size: 10vw'>
-            <img src='./assets/images/Back_4.png' class='backCardRed' style='font-size: 10vw'>
-
-        </section>
-
-        <div class='hideHitStay'>
-            <div class='hitStayWrap'>
-                <button id='hit' style='font-size: 1vw'>Hit</button>
-                <button id='stay' style='font-size: 1vw'>Stay</button>
-            </div>
+        <div class='LogosWrap' style='font-size: 10vw'>
+            <img src='./assets/images/cards/J_Hearts.png' class='logo1Point5' style='font-size: 10vw'>
+            <img src='./assets/images/cards/ACE_Spades.png' class='logo1' style='font-size: 10vw'>
         </div>
 
-    </main>
-
-    <section id='dealerVsPlayer'>
-
-        <h1 class='dealerText' style='font-size: 4vw'>Dealer:</h1>
-        <h1 class='playerText' style='font-size: 4vw'>Player:</h1>
-
-        <div class='dealerHand'>
-            <img src='./assets/images/Back_2.png' class='dealerCard1'>
-            <img src='./assets/images/Clubs_10.png' class='dealerCard2'>
+        <img src='./assets/images/backCards/Back_1.png' class='backCardPurp' style='font-size: 10vw'>
+        <img src='./assets/images/backCards/Back_2.png' class='backCardPink' style='font-size: 10vw'>
+        <div id='headerPlusButton'>
+            <h1 class='blackJackHeader' style='font-size: 10vw'>BlackJack</h1>
+            <br>
+            <button onclick='hideFront(); showGame()' ; id='playButton' style='font-size: 5vw'>Start</button>
         </div>
-
-        <div class='youHand'>
-            <img src='./assets/images/Diamonds_ACE.png' class='playerCard1'>
-            <img src='./assets/images/Spades_3.png' class='playerCard2'>
-        </div>
+        <img src='./assets/images/backCards/Back_3.png' class='backCardGreen' style='font-size: 10vw'>
+        <img src='./assets/images/backCards/Back_4.png' class='backCardRed' style='font-size: 10vw'>
 
     </section>
 
+    <div class='hideHitStay'>
+
+        <div id='hitStayWrap'>
+            <button id='hit' style='font-size: 1vw'>Hit</button>
+            <button id='stay' style='font-size: 1vw'>Stay</button>
+        </div>
+
+    </div>
+
+    
+    <section id='dealerVsPlayer'>
+
+        <h1 class='dealerText' style='font-size: 4vw'>Dealer: <span id='dealer-Sum'></span> </h1>
+        <div id='dealerHand' style = 'font-size: 2vw'>
+            <img src='./assets/images/backCards/Back_2.png' id='hiddenCard'>
+        </div>
+        <h1 class='playerText' style='font-size: 4vw'>Player: <span id='player-Sum'></span></h1>
+        <div id='playerHand' style = 'font-size: 2vw'>
+        </div>
+
+    </div>
+
+    <div id = 'playerBetCounter'>
+        <label id = 'betText'>
+            <h2 style ='font-size: 2vw'>Bet Amount:</h2>
+        </label>
+
+        <span id="betTotal" style = 'font-size: 4vw'></span>
+        
+        <div id = 'betCounter' style = 'font-size: 2vw'>
+            <button id="subtractToBet" onclick="decreaseBet()">-</button>
+            <span id="wagerAmount">100</span>
+            <button id="addToBet" onclick="increaseBet()">+</button>
+        </div>
+        </div>
+
+    </section>
+</div>
 
     <footer>
-
-
     </footer>
-
-
-
-
-
-
-
-
 
     <script src='index.js'></script>
 </body>
