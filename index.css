@@ -1,16 +1,11 @@
 * {
     background-color: seagreen;
     margin-left: 0;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
-
-
-/* body {} */
-
-/* main {
-    display:
-} */
-
-
 
 nav {
     background-color: #DFDCDB;
@@ -34,9 +29,8 @@ footer {
     font-weight: 700;
     font-style: normal;
 }
- 
 
-#refresh {
+/* #refresh {
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -50,8 +44,8 @@ footer {
 }
 
 #refresh:hover {
-    transform: scale(.9);
-}
+    transform: scale(.99);
+} */
 
 #headerPlusButton {
     display: flex;
@@ -187,7 +181,7 @@ h1 {
     }
 }
 
-#dealerVsPlayer {
+#gameStart {
     /* display: flex; */
     display: none;
     flex-direction: column;
@@ -199,48 +193,39 @@ h1 {
     top: 1em;
     left: 44.5%;
     margin: 0 auto;
+    font-size: 2vh;
 }
 
 #dealerHand {
     display: flex;
     position: relative;
     top: 3.8em;
-    left: 4%;
     margin-top: 1px;
     margin-bottom: 1px;
-    /* left: 1em; */
-
+    font-size: 2vh;
 }
 
 #dealerHand,
 img {
-    max-width: 10em;
+    width: 3em;
     height: auto;
-    
-
 }
 
 #playerHand {
     display: flex;
     position: relative;
     top: 8em;
-    left: 4%;
-    
-
-    /* margin-bottom: 5em; */
+    font-size: 2vh;
 }
 
-#playerHand,img {
-    max-width: 10em;
+#playerHand,
+img {
+    width: 3em;
     height: auto;
-    /* font-size: 4vw; */
-    
+    font-size: 2vh;
 }
-/* .dealerCard1 {
-    position: fixed;
-    top: 10em;
-    left: 44%;
-} */
+
+
 
 .dealerCard2 {
     position: fixed;
@@ -252,9 +237,7 @@ img {
     position: relative;
     top: 3em;
     left: 44.5%;
-    /* bottom: 5.5em;
-    left: 43.2%;
-    margin: 0 auto; */
+  
 }
 
 .playerCard1 {
@@ -269,17 +252,13 @@ img {
     right: 44%;
 }
 
-/* .hideHitStay {
-    display: none;
-} */
-
 #hitStayWrap {
     display: flex;
     justify-content: center;
     margin: 0 auto;
     position: fixed;
-    left: 42.5%;
-    bottom: 17%;
+    left: 41.5%;
+    bottom: 11%;
 }
 
 #hit {
@@ -297,7 +276,7 @@ img {
 }
 
 #hit:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 
 }
 
@@ -317,54 +296,90 @@ img {
 }
 
 #stay:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 #betText {
     background-color: transparent;
     margin-bottom: 0;
-
 }
 
-#betTotal {
-    
-   margin: 0 auto;
-   padding: 0;
+#playerBank {
+    margin: 0 auto;
+    padding: 0;
     background-color: transparent;
-    color: white;
+    color: black;
 }
 
 #betCounter {
-    color: white;
-    background-color: black;
-    
-   
-    padding: 10px;
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
     border: 3px solid black;
     border-radius: 10px;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    right: 0 em;
+}
+
+#submitButton {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    width: 7em;
+    height: 3.5em;
+    border: 3px solid black;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    position: relative;
+    top: 1em;
+    right: 0em;
+}
+
+#submitButton:hover {
+    transform: scale(1.05);
 }
 
 #wagerAmount {
-    background-color: black;
+    background-color: white;
     padding: 2px 10px;
 }
 
-#subtractToBet {
-    background-color: white;
+#subtractBet {
+    background-color: black;
+    color: white;
+    font-weight: 800;
+    height: 2em;
+    width: 2em;
+    position: relative;
+    top: .65em;
+    border: 3px solid black;
+    border-radius: 3px;
 }
 
-#addToBet {
-    background-color: white;
+#addBet {
+    background-color: black;
+    color: white;
+    font-weight: 800;
+    height: 2em;
+    width: 2em;
+    position: relative;
+    top: .65em;
+    border: 3px solid black;
+    border-radius: 3px;
 }
 
-#subtractToBet:hover {
-    transform: scale(1.1);
+#subtractBet:hover {
+    transform: scale(1.05);
     color: white;
     background-color: maroon;
 }
 
-#addToBet:hover {
-    transform: scale(1.1);
+#addBet:hover {
+    transform: scale(1.05);
     color: white;
     background-color: seagreen;
 }
@@ -375,5 +390,21 @@ img {
     position: relative;
     right: 30%;
     bottom: 6em;
+}
 
+/* Give appended Player Bank Amount 0 margin */
+p {
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+#playerBank{
+    margin: 0;
+    color: white;
+}
+
+#placedBetAmount p {
+    color: white;
+    width: 2em;
+    margin: .7em auto;
 }

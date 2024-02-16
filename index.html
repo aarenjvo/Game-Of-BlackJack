@@ -16,7 +16,7 @@
 <body>
 
     <nav>
-        <button onclick='showContent(); hideGame();' id='refresh' style='font-size: 1vw'>Refresh</button>
+        <!-- <button onclick='showContent(); hideGame();' id='refresh' style='font-size: 1vw'>Refresh</button> -->
     </nav>
 
     <section id='frontPage'>
@@ -38,44 +38,47 @@
 
     </section>
 
-    <div class='hideHitStay'>
+    <section id='gameStart'>
 
+        <h1 class='dealerText' style='font-size: 4vw'>Dealer:
+            <span id='dealer-Sum'></span>
+        </h1>
+
+        <div id='dealerHand' style='font-size: 2vw'>
+            <img src='./assets/images/backCards/Back_2.png' id='hiddenCard'>
+        </div>
+        <h1 class='playerText' style='font-size: 4vw'>Player:
+            <span id='player-Sum'></span>
+        </h1>
+        <div id='playerHand' style='font-size: 2vw'>
+        </div>
+
+        <div id='playerBetCounter'>
+
+            <p style = 'font-size: 2vw'>Player Bank: </p>
+            <p id="playerBank" style='font-size: 2vw'>500</p>
+
+            <!-- <label id='betText'>
+                <p id = 'placedBetAmount'style='font-size: 2vw'>Bet Amount:</p>
+            </label>
+
+            <span id='betCounter' style='font-size: 2vw'>
+                <button id="subtractBet" onclick="decreaseBet()">-</button>
+                <span id="wagerAmount">0</span>
+                <button id="addBet" onclick="increaseBet()">+</button>
+            </span>
+            <button id="submitButton">Submit</button> -->
+
+        </div>
+
+    </section>
+
+    <div class='hideHitStay'>
         <div id='hitStayWrap'>
             <button id='hit' style='font-size: 1vw'>Hit</button>
             <button id='stay' style='font-size: 1vw'>Stay</button>
         </div>
-
     </div>
-
-    
-    <section id='dealerVsPlayer'>
-
-        <h1 class='dealerText' style='font-size: 4vw'>Dealer: <span id='dealer-Sum'></span> </h1>
-        <div id='dealerHand' style = 'font-size: 2vw'>
-            <img src='./assets/images/backCards/Back_2.png' id='hiddenCard'>
-        </div>
-        <h1 class='playerText' style='font-size: 4vw'>Player: <span id='player-Sum'></span></h1>
-        <div id='playerHand' style = 'font-size: 2vw'>
-        </div>
-
-    </div>
-
-    <div id = 'playerBetCounter'>
-        <label id = 'betText'>
-            <h2 style ='font-size: 2vw'>Bet Amount:</h2>
-        </label>
-
-        <span id="betTotal" style = 'font-size: 4vw'></span>
-        
-        <div id = 'betCounter' style = 'font-size: 2vw'>
-            <button id="subtractToBet" onclick="decreaseBet()">-</button>
-            <span id="wagerAmount">100</span>
-            <button id="addToBet" onclick="increaseBet()">+</button>
-        </div>
-        </div>
-
-    </section>
-</div>
 
     <footer>
     </footer>
