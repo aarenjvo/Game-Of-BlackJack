@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -26,15 +25,21 @@
             <img src='./assets/images/cards/ACE_Spades.png' class='logo1' style='font-size: 10vw'>
         </div>
 
-        <img src='./assets/images/backCards/Back_1.png' class='backCardPurp' style='font-size: 10vw'>
-        <img src='./assets/images/backCards/Back_2.png' class='backCardPink' style='font-size: 10vw'>
+        <div class="leftSideBacks">
+            <img src='./assets/images/backCards/Back_1.png' class='backCardPurp' style='font-size: 10vw'>
+            <img src='./assets/images/backCards/Back_2.png' class='backCardPink' style='font-size: 10vw'>
+        </div>
+
         <div id='headerPlusButton'>
             <h1 class='blackJackHeader' style='font-size: 10vw'>BlackJack</h1>
             <br>
             <button onclick='hideFront(); showGame()' ; id='playButton' style='font-size: 5vw'>Start</button>
         </div>
-        <img src='./assets/images/backCards/Back_3.png' class='backCardGreen' style='font-size: 10vw'>
-        <img src='./assets/images/backCards/Back_4.png' class='backCardRed' style='font-size: 10vw'>
+
+        <div class="rightSideBacks">
+            <img src='./assets/images/backCards/Back_3.png' class='backCardGreen' style='font-size: 10vw'>
+            <img src='./assets/images/backCards/Back_4.png' class='backCardRed' style='font-size: 10vw'>
+        </div>
 
     </section>
 
@@ -55,11 +60,11 @@
 
         <div id='playerBetCounter'>
 
-            <p style = 'font-size: 2vw'>Player Bank: </p>
+            <p style='font-size: 2vw'>Player Bank: </p>
             <p id="playerBank" style='font-size: 2vw'>500</p>
 
-            <!-- <label id='betText'>
-                <p id = 'placedBetAmount'style='font-size: 2vw'>Bet Amount:</p>
+            <label id='betText'>
+                <p id='placedBetAmount' style='font-size: 2vw'>Bet Amount:</p>
             </label>
 
             <span id='betCounter' style='font-size: 2vw'>
@@ -67,12 +72,13 @@
                 <span id="wagerAmount">0</span>
                 <button id="addBet" onclick="increaseBet()">+</button>
             </span>
-            <button id="submitButton">Submit</button> -->
+            <button id="submitButton">Submit</button>
 
         </div>
 
     </section>
 
+    <!-- <button id = 'reset' style = 'font-size: 1vw'>New round?</button> -->
     <div class='hideHitStay'>
         <div id='hitStayWrap'>
             <button id='hit' style='font-size: 1vw'>Hit</button>
@@ -81,6 +87,7 @@
     </div>
 
     <footer>
+
     </footer>
 
     <script src='index.js'></script>

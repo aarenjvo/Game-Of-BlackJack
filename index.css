@@ -1,5 +1,5 @@
 * {
-    background-color: seagreen;
+    background-color: #49A25D;
     margin-left: 0;
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
@@ -71,10 +71,10 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    color: white;
+    color: #DFDCDB;
     border: none;
     background-color: transparent;
-    font-size: 70px;
+    font-size: 65px;
     transition: all 0.7s;
     text-shadow: 2px 1px #747474,
         -1px 3px 1px #767676,
@@ -88,7 +88,7 @@ h1 {
 #playButton:hover {
     color: antiquewhite;
     transform: scale(1.1);
-    rotate: 360deg;
+    rotate: 720deg;
 }
 
 .blackJackHeader {
@@ -165,7 +165,7 @@ h1 {
 
 .LogosWrap {
     animation-name: moveLogos;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-fill-mode: forwards;
 }
 
@@ -181,6 +181,16 @@ h1 {
     }
 }
 
+/* @keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+} */
+
+
 #gameStart {
     /* display: flex; */
     display: none;
@@ -191,7 +201,7 @@ h1 {
 .dealerText {
     position: relative;
     top: 1em;
-    left: 44.5%;
+    left: 43%;
     margin: 0 auto;
     font-size: 2vh;
 }
@@ -225,8 +235,6 @@ img {
     font-size: 2vh;
 }
 
-
-
 .dealerCard2 {
     position: fixed;
     top: 10em;
@@ -236,8 +244,8 @@ img {
 .playerText {
     position: relative;
     top: 3em;
-    left: 44.5%;
-  
+    left: 43%;
+
 }
 
 .playerCard1 {
@@ -271,11 +279,13 @@ img {
     border-radius: 6px 6px;
     background-color: white;
     width: 8em;
-    padding: 10px 37px;
+    padding: .5em 2em;
     margin: 0 2.4%;
 }
 
 #hit:hover {
+    background-color: #CD5858;
+    color: white;
     transform: scale(1.05);
 
 }
@@ -290,13 +300,32 @@ img {
     border-radius: 6px 6px;
     background-color: white;
     width: 8em;
-    padding: 10px 30px;
+    padding: .5em 2em;
     margin: 0 2.4%;
 
 }
 
 #stay:hover {
+    background-color: #CD5858;
+    color: white;
     transform: scale(1.05);
+}
+
+#reset {
+    position: relative;
+    left: 15.5em;
+    display: none;
+    background-color: white;
+    font-weight: 700;
+    border: 3px solid black;
+    border-radius: 6px 6px;
+    padding: .5em .7em;
+}
+
+#reset:hover {
+    background-color: #CD5858;
+    color: white;
+
 }
 
 #betText {
@@ -340,6 +369,8 @@ img {
 }
 
 #submitButton:hover {
+    background-color: #CD5858;
+    color: white;
     transform: scale(1.05);
 }
 
@@ -393,18 +424,18 @@ img {
 }
 
 /* Give appended Player Bank Amount 0 margin */
-p {
+/* p {
     font-family: sans-serif;
     font-weight: 700;
-}
+} */
 
-#playerBank{
+#playerBank {
     margin: 0;
     color: white;
 }
 
 #placedBetAmount p {
-    color: white;
+    color: antiquewhite;
     width: 2em;
     margin: .7em auto;
 }
