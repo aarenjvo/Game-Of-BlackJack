@@ -1,6 +1,6 @@
 # ACTIVITY: "Game of BlackJack"
 
-I will be creating a simple game of blackjack, where the player starts with $500, is playing against the dealer, and can continue to play indefinitely unless player total bet amount reaches $0.
+I will be creating a pixelated blackjack game, where the player starts with $500, is playing against the dealer, and can continue to play indefinitely unless player total bet amount reaches $0. 
 
 ## INSPIRATION:
 
