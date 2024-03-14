@@ -10,7 +10,7 @@ function showGame() {
     document.getElementById('gameStart').style.display = 'block';
     document.getElementById('hit').style.display = 'block';
     document.getElementById('stay').style.display = 'block';
-    document.getElementById('reset').style.display = 'block';
+    // document.getElementById('reset').style.display = 'block';
 };
 
 function hideGame() {
@@ -106,7 +106,7 @@ function hit() {
         document.getElementById('hiddenCard').src = "./assets/images/cards/" + hiddenCard + ".png";
 
         if (playerSum > 21) {
-            alert("You lose!");
+            alert("You lose!", betTotal);
         }
         else if (dealerSum > 21) {
             alert("You win!");
@@ -178,21 +178,6 @@ function stay() {
     });
 };
 
-//Pass in a card parameter, split card into array and get the first index value of the split array.
-function getValue(card) {
-    let data = card.split("_");
-    let value = data[0];
-    //Check if value is not a number, so that if not, 'ACE' can return 11 or 'J','Q','K' can return 10.
-    if (isNaN(value)) {
-        if (value == "ACE") {
-            return 11;
-        }
-        return 10;
-    }
-    // numbers will be assumed as strings so parse it into an integer
-    return parseInt(value);
-};
-
 // Check if ACE card
 function checkIfAce(card) {
     if (card[0] == "ACE") {
@@ -216,6 +201,23 @@ function changeDealerAceValue(dealerSum, dealerAceCount) {
     }
     return dealerSum;
 };
+
+//Pass in a card parameter, split card into array and get the first index value of the split array.
+function getValue(card) {
+    let data = card.split("_");
+    let value = data[0];
+    //Check if value is not a number, so that if not, 'ACE' can return 11 or 'J','Q','K' can return 10.
+    if (isNaN(value)) {
+        if (value == "ACE") {
+            return 11;
+        }
+        return 10;
+    }
+    // numbers will be assumed as strings so parse it into an integer
+    return parseInt(value);
+};
+
+
 
 // Bet Counter
 
